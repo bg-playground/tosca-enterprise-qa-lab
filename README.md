@@ -6,7 +6,7 @@ Tosca-shaped test design for a **mock telecom order-to-activate flow**, runnable
 >
 > **What this is not:** a licensed Tosca workspace. There are no `.tsu` exports and no Commander screenshots, and it does not connect to Tricentis products. The app is a static mock with fictional data and no backend.
 
-## JD skill map
+## Skill map
 
 | Hiring signal | Where to look |
 |---|---|
