@@ -34,6 +34,8 @@ Other commands: `npm run test:functional | test:integration | test:regression | 
 
 ## Feature Map
 
+**Teaching materials:** [Tosca concepts guide](docs/tosca-concepts.md) ([PDF](docs/tosca-concepts.pdf)) and a [10–15 min teaching lab](docs/teaching-lab.md).
+
 | Feature | Where to look |
 |---|---|
 | Model-based test design (Tosca Modules / TestCases / reusables) | [docs/concept-map.md](docs/concept-map.md), `tests/pages`, `tests/fixtures` |

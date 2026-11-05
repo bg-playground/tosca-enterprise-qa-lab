@@ -5,7 +5,9 @@
   "description": "Tosca-shaped concept map and Playwright twin for a mock telecom order-to-activate flow. No Tosca license required.",
   "license": "MIT",
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "start:mock": "node scripts/serve.mjs",
     "test": "playwright test",
@@ -14,11 +16,13 @@
     "test:regression": "playwright test tests/regression",
     "test:uat": "playwright test tests/uat",
     "typecheck": "tsc --noEmit",
-    "leak-scan": "node scripts/leak-scan.mjs"
+    "leak-scan": "node scripts/leak-scan.mjs",
+    "docs:pdf": "node scripts/build-pdf.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.64.0",
     "@types/node": "^20.19.0",
+    "marked": "^15.0.12",
     "typescript": "5.9.3"
   }
 }
