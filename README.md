@@ -6,9 +6,9 @@ Tosca-shaped test design for a **mock telecom order-to-activate flow**, runnable
 >
 > **What this is not:** a licensed Tosca workspace. There are no `.tsu` exports and no Commander screenshots, and it does not connect to Tricentis products. The app is a static mock with fictional data and no backend.
 
-## Skill map
+## Feature Map
 
-| Hiring signal | Where to look |
+| Feature | Where to look |
 |---|---|
 | Model-based test design (Tosca Modules / TestCases / reusables) | [docs/concept-map.md](docs/concept-map.md), `tests/pages`, `tests/fixtures` |
 | Requirements analysis and coverage | [docs/requirements.md](docs/requirements.md), [docs/scenarios.md](docs/scenarios.md) |
