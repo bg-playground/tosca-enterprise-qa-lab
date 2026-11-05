@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Order to Activate (mock)</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><h1>Telecom Order-to-Activate</h1><p class="banner">Static mock app for test demos. No real backend, no real customers.</p></header>
+<main>
+<section aria-labelledby="new-order">
+  <h2 id="new-order">New order</h2>
+  <form id="order-form" novalidate>
+    <label>Customer name <input id="customer" data-testid="customer" autocomplete="off"></label>
+    <label>Service ZIP <input id="zip" data-testid="zip" inputmode="numeric"></label>
+    <button type="button" id="check" data-testid="check-serviceability">Check serviceability</button>
+    <p id="service-msg" data-testid="service-msg" role="status"></p>
+    <label>Plan
+      <select id="plan" data-testid="plan">
+        <option value="">Choose a plan</option>
+        <option value="BASIC">Basic 5GB</option>
+        <option value="PLUS">Plus 25GB</option>
+        <option value="UNLTD">Unlimited</option>
+      </select>
+    </label>
+    <p data-testid="price">Monthly price: <span id="price">-</span></p>
+    <label>SIM ICCID <input id="iccid" data-testid="iccid" inputmode="numeric"></label>
+    <ul id="errors" data-testid="errors" role="alert"></ul>
+    <button type="submit" data-testid="submit-order">Submit order</button>
+  </form>
+</section>
+<section aria-labelledby="orders-h">
+  <h2 id="orders-h">Orders</h2>
+  <table data-testid="orders"><thead><tr><th>Order</th><th>Customer</th><th>Plan</th><th>Status</th><th>Actions</th></tr></thead><tbody id="orders-body"></tbody></table>
+</section>
+</main>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,24 @@
+{
+  "name": "tosca-enterprise-qa-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tosca-shaped concept map and Playwright twin for a mock telecom order-to-activate flow. No Tosca license required.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start:mock": "node scripts/serve.mjs",
+    "test": "playwright test",
+    "test:functional": "playwright test tests/functional",
+    "test:integration": "playwright test tests/integration",
+    "test:regression": "playwright test tests/regression",
+    "test:uat": "playwright test tests/uat",
+    "typecheck": "tsc --noEmit",
+    "leak-scan": "node scripts/leak-scan.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "^20.19.0",
+    "typescript": "5.9.3"
+  }
+}
